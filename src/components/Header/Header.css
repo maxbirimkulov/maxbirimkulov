@@ -80,6 +80,9 @@
         z-index: 4;
         transition: 1.5s;
     }
+    .header__list .header__link{
+       display: none;
+    }
 
     .burger {
         display: block;
@@ -144,6 +147,7 @@
 
     .header__list.active .header__link{
         color: black;
+        display: inline;
     }
     .header__list.active .header__link::before{
         display: none;
