@@ -1,0 +1,131 @@
+.aboutMe{
+
+}
+.aboutMe__info{
+    width: calc(65% - 30px);
+}
+
+.aboutMe__info-title, .skills__title{
+    font-size: 30px;
+}
+
+.aboutMe__image{
+    display: none;
+}
+
+.aboutMe__content{
+    padding: 0 50px;
+    display: flex;
+    column-gap: 60px;
+    position: relative;
+
+}
+
+.aboutMe__img-block{
+    width: calc(35% - 30px);
+
+}
+
+.aboutMe__img{
+    width: 100%;
+    border-radius: 5px;
+    transition: .5s;
+    position: sticky;
+    top: 40px;
+    right: 0;
+}
+
+.aboutMe__img:hover{
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 20px 1px #565155;
+    box-shadow: 0px 0px 20px 1px #565155;
+}
+
+.aboutMe__info-channel, .aboutMe__info-address, .aboutMe__info-exp, .aboutMe__info-language{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.aboutMe__info-channel a{
+    text-decoration: underline;
+
+}
+
+.aboutMe__info-text{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+.skills{
+    margin-top: 30px;
+}
+.skills__title{
+    margin-bottom: 20px;
+}
+.skills__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.skills__item-title{
+    font-size: 24px;
+}
+
+.skills__item-text{
+    font-size: 19px;
+}
+
+@media (max-width: 992px) {
+    .aboutMe__content {
+        padding: 0;
+        column-gap: 30px;
+    }
+    .aboutMe__info-channel, .aboutMe__info-address, .aboutMe__info-exp, .aboutMe__info-language {
+        font-size: 19px;
+
+    }
+    .aboutMe__img-block {
+        width: 35%;
+    }
+}
+
+@media (max-width: 767px) {
+    .aboutMe__info-channel, .aboutMe__info-address, .aboutMe__info-exp, .aboutMe__info-language {
+        font-size: 18px;
+    }
+    .skills__item-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutMe__img-block{
+        display: none;
+    }
+    .aboutMe__image{
+        display: inline-block;
+        width: 80%;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .aboutMe__image:hover{
+        transition: .5s;
+        -webkit-box-shadow: 0px 0px 20px 1px #565155;
+        box-shadow: 0px 0px 20px 1px #565155;
+    }
+    .aboutMe__info {
+        width: 100%;
+    }
+    .aboutMe__info-title, .skills__title {
+        font-size: 27px;
+    }
+}
+@media (max-width: 425px) {
+    .aboutMe__info-channel, .aboutMe__info-address, .aboutMe__info-exp, .aboutMe__info-language {
+        font-size: 17px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,256 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Список задач",
+      "library": [
+        "Font Awesome",
+        "Bootswatch"
+      ],
+      "linkLesson": "",
+      "site": "https://reacttodoappmax.herokuapp.com/",
+      "image": "https://i.ibb.co/p2RRrRS/TodoList.jpg",
+      "category": "React",
+      "responsive": false
+    },
+    {
+      "id": 2,
+      "title": "Прогноз погоды",
+      "library": [
+        "Open Weather API",
+        "VantaJs"
+      ],
+      "linkLesson": "",
+      "site": "https://weather-sigma-henna.vercel.app/",
+      "image": "https://i.ibb.co/cNxstbk/open-Weather.jpg",
+      "category": "React",
+      "responsive": false
+    },
+    {
+      "id": 3,
+      "title": "Пример магазина",
+      "library": [
+        "MaterializeCSS",
+        "FakeStore API"
+      ],
+      "linkLesson": "",
+      "site": "https://shoposh.herokuapp.com/",
+      "image": "https://i.ibb.co/y8kTfCN/example-Shop.jpg",
+      "category": "React",
+      "responsive": false
+    },
+    {
+      "id": 4,
+      "title": "Список задач",
+      "library": [
+        "VantaJs",
+        "FontAwesome"
+      ],
+      "linkLesson": "",
+      "site": "https://examplereact-nine.vercel.app/",
+      "image": "https://i.ibb.co/bJgy2hS/Todo-List2.jpg",
+      "category": "React",
+      "responsive": true
+    },
+    {
+      "id": 5,
+      "title": "Проекты фильмы",
+      "library": [
+        "MaterializeCSS",
+        "OMD API"
+      ],
+      "linkLesson": "",
+      "site": "https://movies-roan.vercel.app/",
+      "image": "https://i.ibb.co/G0CStsq/movies.jpg",
+      "category": "React",
+      "responsive": true
+    },
+    {
+      "id": 6,
+      "title": "GitHub репозитории",
+      "library": [
+        "GitHub API",
+        "MaterializeCSS",
+        "Redux"
+      ],
+      "linkLesson": "",
+      "site": "https://git-repositors.vercel.app/",
+      "image": "https://i.ibb.co/NCpbD7z/gitrepositors.jpg",
+      "category": "React",
+      "responsive": true
+    },
+    {
+      "id": 7,
+      "title": "Meal DB",
+      "library": [
+        "MealDB API",
+        "MaterializeCSS"
+      ],
+      "linkLesson": "",
+      "site": "https://vercel.com/maxbirimkulov/mealdb",
+      "image": "https://i.ibb.co/Q9KyNgz/mealdb.jpg",
+      "category": "React",
+      "responsive": false
+    },
+    {
+      "id": 8,
+      "title": "Список Задач",
+      "library": ["VantaJs"],
+      "linkLesson": "",
+      "site": "https://todo-list-beta-woad.vercel.app/",
+      "image": "https://i.ibb.co/0rhGPCM/todo-List3.jpg",
+      "category": "React",
+      "responsive": false
+    },
+    {
+      "id": 9,
+      "title": "Магазин обуви",
+      "library": ["Firebase", "MaterializeCSS", "Font-Awesome","RAPID API"],
+      "linkLesson": "",
+      "site": "https://brand-shop-gold.vercel.app/",
+      "image": "https://i.ibb.co/yncQY2g/branshop.jpg",
+      "category": "React",
+      "responsive": true
+    }
+    ,{
+      "id": 10,
+      "title": "Прогноз погоды",
+      "library": ["Open Weather API"],
+      "linkLesson": "",
+      "site": "https://weather-for-beknur.vercel.app/",
+      "image": "https://i.ibb.co/QcrK65X/open-Weather2.jpg",
+      "category": "React",
+      "responsive": false
+    }
+  ,{
+      "id": 11,
+      "title": "Список задач",
+      "library": ["Vanta JS"],
+      "linkLesson": "",
+      "site": "https://todo2000.vercel.app/",
+      "image": "https://i.ibb.co/bvjzfzx/todolist4.jpg",
+      "category": "React",
+      "responsive": true
+    }
+  ,{
+      "id": 12,
+      "title": "Travel",
+      "library": ["React-Router-Dom"],
+      "linkLesson": "",
+      "site": "https://travel-lovat.vercel.app/",
+      "image": "https://i.ibb.co/kym5HMs/travel.jpg",
+      "category": "React",
+      "responsive": true
+    }
+  ,{
+      "id": 13,
+      "title": "Магазин пульсометров",
+      "library": ["SCSS", "jQuery", "Owl-Carousel", "2Gis API"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/pulsometr_project/",
+      "image": "https://i.ibb.co/K92MCZZ/pulsometr.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+  ,{
+      "id": 14,
+      "title": "CLOUDBUDGET",
+      "library": ["SCSS", "jQuery", "Fancy-Box", "ddslick", "Bootstrap"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/CloudBudget/",
+      "image": "https://i.ibb.co/BtpVnCG/cloudbudget.jpg",
+      "category": "Верстка",
+      "responsive": true
+    } ,{
+      "id": 15,
+      "title": "INDICORP",
+      "library": ["SCSS", "jQuery", "Fancy-Box", "Bootstrap"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/webdevelop/",
+      "image": "https://i.ibb.co/dfjx3KN/indicorp.jpg",
+      "category": "Верстка",
+      "responsive": true
+    },{
+      "id": 16,
+      "title": "Haus",
+      "library": ["SCSS", "jQuery"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/haus/",
+      "image": "https://i.ibb.co/9Z0v4CM/haus.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+  ,{
+      "id": 17,
+      "title": "Witcher",
+      "library": ["SCSS", "jQuery", "Fancy-Box"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/witcher1600/",
+      "image": "https://i.ibb.co/wgpdNbd/witcher.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+  ,{
+      "id": 18,
+      "title": "Denis Novikov",
+      "library": ["CSS"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/it1900/",
+      "image": "https://i.ibb.co/pxjhMtp/denisnovikov.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+  ,{
+      "id": 19,
+      "title": "iPhone-store",
+      "library": ["ONLY-JS"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/iphone-store/",
+      "image": "https://i.ibb.co/QcxJY5z/iphone-store.jpg",
+      "category": "Верстка",
+      "responsive": true
+    },
+    {
+      "id": 20,
+      "title": "Mitravel",
+      "library": ["jQuery", "SCSS", "InputMask", "Fancy-Box"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/mitravel/",
+      "image": "https://i.ibb.co/PGbb3zD/mitravel.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }  ,
+    {
+      "id": 21,
+      "title": "Active Box",
+      "library": ["normalizeCSS", "Owl-Carousel"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/activeBox/",
+      "image": "https://i.ibb.co/3fYDzHy/activebox.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+ ,
+    {
+      "id": 22,
+      "title": "Consult",
+      "library": ["Bootstrap", "Owl-Carousel", "jQuery"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/consult-master/",
+      "image": "https://i.ibb.co/0ys7D8Q/consult.jpg",
+      "category": "Верстка",
+      "responsive": true
+    } ,
+    {
+      "id": 23,
+      "title": "Waxom",
+      "library": ["Bootstrap", "Owl-Carousel", "jQuery"],
+      "linkLesson": "",
+      "site": "https://maxbirimkulov.github.io/waxom/",
+      "image": "https://i.ibb.co/g73MZ8J/waxom.jpg",
+      "category": "Верстка",
+      "responsive": true
+    }
+
+  ]
+}

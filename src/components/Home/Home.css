@@ -1,0 +1,147 @@
+
+.home__row{
+    display: flex;
+    column-gap: 60px;
+}
+
+.home__img-block{
+    width: calc(35% - 30px);
+}
+
+.home__img{
+    width: 100%;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.home__img:hover{
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 20px 1px #565155;
+    box-shadow: 0px 0px 20px 1px #565155;
+}
+.home__image{
+    display: none;
+}
+
+.home__title{
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+}
+
+.home__subtitle{
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.home__text{
+    color: white;
+    font-size: 21px;
+    margin-bottom: 12px;
+    line-height: 30px;
+}
+
+
+.home__info{
+    width: calc(65% - 30px);
+}
+
+
+.home__text-icon{
+    margin-left: 20px;
+}
+
+.home__text-icon:hover svg{
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+.home__resume{
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .3s;
+}
+.home__resume:hover{
+    background: #ffffff;
+    transition: .3s;
+}
+
+.home__resume:hover .home__resume-text{
+    color: black;
+    transition: .3s;
+}
+.home__resume-text{
+    color: white;
+    transition: .3s;
+    font-size: 17px;
+}
+
+@media (max-width: 992px) {
+    .home__text {
+
+        font-size: 19px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home__row {
+        column-gap: 30px;
+    }
+    .home__img-block {
+       display: none;
+    }
+    .home__image{
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .home__image:hover{
+        transition: .5s;
+        -webkit-box-shadow: 0px 0px 20px 1px #565155;
+        box-shadow: 0px 0px 20px 1px #565155;
+    }
+    .home__info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .home__image {
+        width: 65%;
+    }
+    .header {
+        padding: 20px 0;
+    }
+    .home__text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .home__subtitle {
+        margin: 15px 0;
+        font-size: 24px;
+    }
+    .home__image {
+        width: 80%;
+    }
+    .home__text {
+        font-size: 17px;
+    }
+    .home__resume-text {
+        font-size: 15px;
+    }
+    .home__resume {
+        width: 170px;
+
+    }
+}
