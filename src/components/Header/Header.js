@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './Header.css';
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -10,7 +10,11 @@ const Header = () => {
         <header className='header'>
             <div className="container">
                 <nav className='header__navbar'>
-                    <h1 className='header__title'>Max Birimkulov</h1>
+                    <h1 className='header__title'>
+                        <Link to="/">
+                            Max Birimkulov
+                        </Link>
+                       </h1>
                     <ul className={`header__list ${burger ? 'active' : ''}`}>
                         <li className='header__list-item'>
                             <NavLink onClick={() => setBurger(false)} className='header__link' to='/'>Главная</NavLink>
