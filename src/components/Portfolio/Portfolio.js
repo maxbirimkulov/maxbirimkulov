@@ -11,7 +11,7 @@ const Portfolio = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        axios('https://maxbirimkulov-portfolio.herokuapp.com/portfolio/projects/api')
+        axios('https://maxbirimkulov-portfolio.herokuapp.com/portfolio/api/projects')
             .then(({data}) => setProjects(data))
     }, []);
 
