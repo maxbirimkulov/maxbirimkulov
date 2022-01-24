@@ -20,9 +20,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "server": "json-server --watch db.json --port 8080",
-    "dev": "concurrently \"yarn start\" \"yarn server\"",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
