@@ -35,7 +35,19 @@ const Portfolio = () => {
 
                 <div className='portfolio__content'>
                     <div className='portfolio__content-row'>
-                        {projects.map((item) => (
+                        {projects.filter((item) => {
+                            switch (sort) {
+                                case "React JS": {
+                                    return item.category === 'React'
+                                }
+                                case "Верстка" : {
+                                    return item.category === 'Верстка'
+                                }
+                                default :{
+                                    return item
+                                }
+                            }
+                        }).map((item) => (
                             <div key={item.id} className='portfolio__content-card'>
                                 <div className='portfolio__content-card-image'>
                                     <a target='_blank' href={item.site}>
