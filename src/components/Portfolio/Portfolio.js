@@ -4,10 +4,11 @@ import './Portfolio.css'
 import {faHandPointRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import SortItem from "./SortItem";
 
 
 const Portfolio = () => {
-
+    const [sort, setSort] = useState('По умолчанию');
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -18,7 +19,20 @@ const Portfolio = () => {
     return (
         <section className='portfolio'>
             <div className="container">
-                <h2 className='portfolio__title title'>Портфолио</h2>
+                <div className="portfolio__header">
+                    <h2 className='portfolio__title title'>Портфолио</h2>
+                    <div className='content__header-sort'>
+                        <p className='content__header-sort-title'>Сортировка</p>
+                        <p className='content__header-sort-default'>{sort} <span>︾</span></p>
+                        <div className='content__header-sort-line'>
+                        </div>
+                        <ul className='content__header-sort-list'>
+                           <SortItem text='React JS' setSort={setSort}/>
+                           <SortItem text='Верстка' setSort={setSort}/>
+                        </ul>
+                    </div>
+                </div>
+
                 <div className='portfolio__content'>
                     <div className='portfolio__content-row'>
                         {projects.map((item) => (

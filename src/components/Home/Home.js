@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Photo from '../../assets/photo.jpg'
 import PhotoSmall from '../../assets/photosmall.jpg'
-import './Home.css'
+import Resume from '../../assets/resume.pdf'
+import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck , faSearchDollar} from '@fortawesome/free-solid-svg-icons'
+import {ThemeContext} from "../../providers/ThemeProvider";
 
 const Home = () => {
+    const {type} = useContext(ThemeContext);
     return (
-        <section className='home'>
+        <section  className={`home ${type ? 'light' : ''}`}>
             <div className="container">
             <div className='home__row'>
                 <div className='home__img-block'>
@@ -40,7 +43,7 @@ const Home = () => {
                     </p>
 
                     <div className='home__resume'>
-                        <a href="#" className='home__resume-text'>Скачать резюме</a>
+                        <a download href={Resume} className='home__resume-text'>Скачать резюме</a>
                     </div>
 
                 </div>

@@ -5,7 +5,7 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: white;
+
     scrollbar-width: none;
     scrollbar-color: #111317 transparent;
 }
@@ -23,6 +23,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #111317;
+    color: white;
+}
+
+.app a{
+    color: white;
+}
+
+.app.light{
+    background-color: white;
+    color: black;
+}
+
+.app.light a{
+    color: black;
 }
 
 .container{
@@ -38,10 +53,6 @@
     margin-bottom: 30px;
 }
 
-
-body{
-    background: #111317;
-}
 
 main{
     padding: 60px 0;

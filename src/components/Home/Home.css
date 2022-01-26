@@ -25,18 +25,15 @@
 
 .home__title{
     font-size: 30px;
-    color: white;
     font-weight: normal;
 }
 
 .home__subtitle{
     margin: 20px 0;
     font-size: 25px;
-    color: white;
 }
 
 .home__text{
-    color: white;
     font-size: 21px;
     margin-bottom: 12px;
     line-height: 30px;
@@ -67,17 +64,30 @@
     border-radius: 15px;
     transition: .3s;
 }
+
+.home.light .home__resume{
+    border: 1px solid black;
+}
 .home__resume:hover{
     background: #ffffff;
     transition: .3s;
+}
+
+.home.light .home__resume:hover{
+    background: black;
 }
 
 .home__resume:hover .home__resume-text{
     color: black;
     transition: .3s;
 }
-.home__resume-text{
+
+.home.light .home__resume:hover .home__resume-text{
     color: white;
+    transition: .3s;
+}
+
+.home__resume-text{
     transition: .3s;
     font-size: 17px;
 }

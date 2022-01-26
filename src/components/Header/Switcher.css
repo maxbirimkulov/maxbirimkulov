@@ -1,0 +1,84 @@
+span.switcher {
+    position: relative;
+    width: 130px;
+    height: 30px;
+    border-radius: 25px;
+}
+.switcher__input{
+    appearance: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+    font-family: "Oswald", sans-serif;
+}
+.switcher__input:before,
+.switcher__input:after {
+     z-index: 2;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     color: black;
+ }
+.switcher__input:before {
+     content: "ON";
+     left: 15px;
+ }
+.switcher__input:after {
+     content: "OFF";
+    right: 13px;
+}
+.switcher__label {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+
+    border-radius: 20px;
+}
+
+.switcher__input {
+    transition: 0.25s -0.1s;
+}
+.switcher__input:checked {
+     background-color: black;
+}
+
+.switcher__input:checked:before {
+     color: black;
+     transition: color 0.5s 0.2s;
+ }
+.switcher__input:checked:after {
+     color: grey;
+     transition: color 0.5s;
+ }
+.switcher__input:checked + label {
+    left: 6px;
+    right: 83px;
+      background: white;
+      transition: left 0.5s, right 0.4s 0.2s;
+  }
+
+.switcher__input:not(:checked) {
+    background: white;
+    transition: background 0.5s -0.1s;
+}
+.switcher__input:not(:checked):before {
+     color: grey;
+     transition: color 0.5s;
+ }
+.switcher__input:not(:checked):after {
+     color: white;
+     transition: color 0.5s 0.2s;
+ }
+.switcher__input:not(:checked) + label {
+    left: 54px;
+    right: 35px;
+      background: black;
+
+      transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+  }
+
+

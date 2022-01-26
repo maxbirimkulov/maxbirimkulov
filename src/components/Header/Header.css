@@ -3,14 +3,18 @@
     border-bottom: 1px solid white;
 }
 
+.header.light{
+    border-bottom: 1px solid black;
+}
+
 .header__navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .header__title {
-    color: white;
     letter-spacing: 1px;
     font-weight: normal;
     font-size: 32px;
@@ -22,7 +26,6 @@
 }
 
 .header__link {
-    color: white;
     font-size: 20px;
     letter-spacing: .5px;
     transition: .5s;
@@ -49,8 +52,12 @@
     bottom: -38px;
     left: -12px;
     background-color: #111317;
-    height: 2px;
+    height: 4px;
     transition: .5s;
+}
+
+.header.light .header__link::before{
+    background-color: white;
 }
 
 .header__link:hover::before {
@@ -63,6 +70,9 @@
 }
 
 @media (max-width: 992px) {
+    .header__navbar{
+        padding-right: 40px;
+    }
     .header__list {
         display: flex;
         flex-direction: column;
@@ -115,6 +125,13 @@
         transition: .5s;
     }
 
+    .header.light .burger__line{
+        background-color: black;
+    }
+    .header.light .burger__line::before,.header.light .burger__line::after {
+        background-color: black;
+    }
+
     .burger__line::after {
         top: 9px;
     }
@@ -137,6 +154,14 @@
         background-color: black;
     }
 
+    .header.light .burger.active .burger__line::before {
+        background-color: white;
+    }
+
+   .header.light .burger.active .burger__line::after {
+        background-color: white;
+    }
+
     .header__list.active {
         display: flex;
         transition: 1.5s;
@@ -145,6 +170,14 @@
 
     }
 
+    .header.light  .header__list.active{
+        background-color: black;
+    }
+
+    .header.light .header__list.active .header__link{
+        color: white;
+        display: inline;
+    }
     .header__list.active .header__link{
         color: black;
         display: inline;
@@ -166,6 +199,12 @@
 @media (max-width: 576px) {
     .header__list{
         width: 100%;
+    }
+
+    .header__navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
     }
 
 }

@@ -44,6 +44,86 @@
     font-style: italic;
 }
 
+.portfolio__title{
+    margin-bottom: 0;
+}
+
+.content__header-sort{
+    width: 200px;
+    padding: 4px 9px 5px 14px;
+    background-color: white;
+    box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.09);
+    border-radius: 15px ;
+    position: relative;
+    cursor: pointer;
+}
+
+.content__header-sort:hover > .content__header-sort-default span {
+    transform: rotate(180deg);
+    color: #F46D40;
+}
+.content__header-sort:hover{
+    border-radius: 15px 15px 0 0;
+}
+.content__header-sort:hover>.content__header-sort-list{
+    display: flex;
+}
+
+.content__header-sort-list{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 0 9px 10px 14px;
+    border-radius: 0 0 15px 15px;
+    flex-direction: column;
+    row-gap: 20px;
+    display: none;
+}
+
+.content__header-sort-line{
+    height: 1px;
+    background-color: #A4ACAD;
+    margin-bottom: 10px;
+}
+
+.content__header-sort-item{
+
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    transition: .3s;
+}
+
+.content__header-sort-item:hover{
+    color:  #00000050;
+    transition: .3s;
+
+}
+
+.content__header-sort-title{
+    font-size: 14px;
+    line-height: 17px;
+    color: #A4ACAD
+}
+
+.content__header-sort-default{
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio__header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    flex-direction: row;
+}
+
 @media (max-width: 992px) {
     .portfolio__content-card-less {
         column-gap: 10px;
@@ -62,10 +142,44 @@
 
         justify-content: center;
     }
+    .content__header-sort {
+        width: 160px;
+        padding: 4px 5px 0px 12px;
+    }
+     .content__header-sort-list{
+         padding: 4px 5px 5px 12px;
+    }
+    .content__header-sort-default {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px
+    }
 }
 @media (max-width: 576px) {
     .portfolio__content-card {
         width: 100%;
+    }
+    .portfolio__header {
+        display: flex;
+        row-gap: 5px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .content__header-sort-default {
+        margin-bottom: 5px
+    }
+    .content__header-sort-list {
+
+        row-gap: 10px;
+
+    }
+    .content__header-sort-line {
+        display: none;
+        margin-bottom: 0;
+    }
+    .content__header-sort:hover .content__header-sort-line{
+        display: block;
     }
 
 }

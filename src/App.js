@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Header from "./components/Header/Header";
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
@@ -8,10 +8,13 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Courses from "./components/Courses/Courses";
+import {ThemeContext} from "./providers/ThemeProvider";
 
 function App() {
+    const {type} = useContext(ThemeContext);
+
   return (
-    <div className='app'>
+    <div className={`app ${type ? 'light' : ''}`}>
         <Header/>
         <main>
         <Routes>

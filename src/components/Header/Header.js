@@ -1,13 +1,16 @@
-import React,{useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './Header.css';
 import {NavLink, Link} from 'react-router-dom'
 
-const Header = () => {
+import {ThemeContext} from "../../providers/ThemeProvider";
+import Switcher from "./Switcher";
 
-    const [burger, setBurger] = useState(false)
+const Header = () => {
+    const {type} = useContext(ThemeContext);
+    const [burger, setBurger] = useState(false);
 
     return (
-        <header className='header'>
+        <header className={`header ${type ? 'light' : ''}`} >
             <div className="container">
                 <nav className='header__navbar'>
                     <h1 className='header__title'>
@@ -32,6 +35,7 @@ const Header = () => {
                             <NavLink onClick={() => setBurger(false)} className='header__link' to='/contact'>Контакты</NavLink>
                         </li>
                     </ul>
+                    <Switcher/>
                 </nav>
                 <div className={`burger ${burger ? 'active' : ''}`} onClick={() => setBurger(!burger)}>
                     <span className="burger__line"></span>
