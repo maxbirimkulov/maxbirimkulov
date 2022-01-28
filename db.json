@@ -2,14 +2,16 @@
   "projects": [
     {
       "id": 1,
-      "title": "Список задач",
+      "title": "Romsem",
       "library": [
-        "Font Awesome",
-        "Bootswatch"
+        "React-Hook-Form",
+        "Material ui",
+        "Swiper",
+        "json-server"
       ],
-      "linkLesson": "https://www.youtube.com/watch?v=IN1MbXh11zA&list=PL3G0ImYbn66iyVJe07bUC93oTqfVrb7KL&index=51",
-      "site": "https://reacttodoappmax.herokuapp.com/",
-      "image": "https://i.ibb.co/p2RRrRS/TodoList.jpg",
+      "linkLesson": "#",
+      "site": "https://romsem.herokuapp.com/",
+      "image": "https://ibb.co/cYfC875",
       "category": "React",
       "responsive": false
     },
