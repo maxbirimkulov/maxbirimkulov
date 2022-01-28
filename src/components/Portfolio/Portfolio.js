@@ -60,6 +60,7 @@ const Portfolio = () => {
                                     <h4 className='portfolio__content-card-title'>{item.title}</h4>
                                     <p className='portfolio__content-card-descr'>Категория : {item.category}</p>
                                     <p className='portfolio__content-card-descr'>Библиотеки : <span>{item.library.join(', ')}</span></p>
+                                    <p className='portfolio__content-card-descr'>Адаптивность : {item.responsive ? "true" : "false"}</p>
                                     <p className='portfolio__content-card-less'>
                                         Ссылка на видео урок
                                         <FontAwesomeIcon icon={faHandPointRight}/>
